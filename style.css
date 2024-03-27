@@ -1,0 +1,134 @@
+/*    My Project no. #6    */
+
+
+
+* {
+     margin: 0;
+     padding: 0;
+     font-family: Arial;
+ }
+
+body {
+    color: white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #ffa210;
+}
+
+#container {
+    opacity: 0;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 20px;
+    background-color: #ff5500;
+    transform: translateY(10px);
+    animation: show 0.5s ease-out 0.2s forwards;
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+#type-writer-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    color: #555;
+    border: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+span {
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 20px 0 5px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+button {
+    border: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: #ffe342;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: #ffa210;
+}
+
+#type-writer {
+    display: flex;
+    justify-content: center;
+}
+
+#type-writer h2 {
+    padding: 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 40px;
+    border-right: 4px solid white;
+    animation: typing 2s steps(40) forwards infinite,
+                         blink-caret 0.5s infinite;
+}
+
+@keyframes typing {
+    0% { width: 0 }
+    33% { width: 100% }
+    66% { width: 100% }
+    100% { width: 0 }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
